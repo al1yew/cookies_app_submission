@@ -30,15 +30,7 @@ const PricingPlans = () => {
           >
             {PRICING_PLANS.map((plan, i) => {
               return (
-                <div
-                  key={i}
-                  className={`${
-                    plan.isPreferred
-                      ? "bg-appRed text-white"
-                      : "bg-white text-black"
-                  } p-8 flex flex-col justify-between items-start lg:flex-1 
-                  h-[440px] max-w-[380px] w-full rounded-3xl shadow-md lg:hover:scale-105 duration-100 `}
-                >
+                <div key={i}>
                   <h1 className="font-black text-3xl">{plan.name}</h1>
                   <p
                     className={`font-normal text-md mb-4 ${
@@ -59,9 +51,21 @@ const PricingPlans = () => {
                     </span>
                   </p>
                   <ul className="w-full">
-                    <li>dsadas</li>
-                    <li>dsadasd</li>
-                    <li>asdasda</li>
+                    {plan.options.map((option, i) => {
+                      return (
+                        <li
+                          key={i}
+                          className={`px-3 py-1 w-full rounded-lg ${
+                            plan.isPreferred
+                              ? "text-white bg-[#CA2B2B]"
+                              : "text-black bg-[#F1EEED]"
+                          } flex items-center justify-start mb-2 `}
+                        >
+                          img
+                          <span className="ml-3">{option}</span>
+                        </li>
+                      );
+                    })}
                   </ul>
                   <div className="w-full">
                     <Button />
