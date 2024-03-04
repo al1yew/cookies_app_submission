@@ -9,7 +9,7 @@ import Modal from "@/components/home/Modal";
 export default function Home() {
   return (
     <>
-      {/* <Modal /> */}
+      <Modal />
       <Hero />
       <Benefits />
       <Management />
