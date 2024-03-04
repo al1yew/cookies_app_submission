@@ -23,6 +23,9 @@ const config: Config = {
       fontSize: {
         md: "16px",
       },
+      spacing: {
+        "18": "72px",
+      },
     },
   },
   plugins: [],
