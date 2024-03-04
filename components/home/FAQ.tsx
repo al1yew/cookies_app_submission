@@ -17,13 +17,13 @@ const FAQ = () => {
   return (
     <section className="w-full relative mt-20 lg:mt-32">
       <Container>
-        <div className="bg-[#FBFBFB] rounded-3xl p-3 lg:px-28 lg:py-16 lg:w-10/12 lg:max-w-[1100px] w-full mx-auto">
+        <div className="bg-[#FBFBFB] rounded-3xl p-3 lg:px-32 lg:py-16 xl:w-11/12 lg:max-w-[1100px] w-full mx-auto">
           <Image
             src="/images/flower.svg"
             width={400}
             height={400}
             alt="squares"
-            className="absolute -left-7 -top-44 hidden lg:block -z-10"
+            className="absolute -left-9 -top-44 hidden lg:block -z-10"
           />
           <h1 className="text-3xl font-black text-center lg:text-start">
             Frequently Asked Questions

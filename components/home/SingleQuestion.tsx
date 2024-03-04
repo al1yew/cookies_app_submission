@@ -18,7 +18,10 @@ const SingleQuestion = ({
   const isActive = id === activeId;
 
   return (
-    <div className="bg-white p-4 lg:p-7 relative w-full rounded-xl">
+    <div
+      className="bg-white p-4 lg:p-7 relative w-full rounded-xl cursor-pointer"
+      onClick={() => toggleQuestion(id)}
+    >
       <h3 className="font-black text-2xl max-w-[80%] lg:max-w-full">
         {question}
       </h3>
