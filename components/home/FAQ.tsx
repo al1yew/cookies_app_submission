@@ -1,5 +1,8 @@
+"use client";
+
 import { QUESTIONS } from "@/lib/constants";
 import Container from "../shared/Container";
+import SingleQuestion from "./SingleQuestion";
 
 const FAQ = () => {
   return (
@@ -11,7 +14,7 @@ const FAQ = () => {
           </h1>
           <div className="w-full flex-col flex gap-5 lg:gap-8 mt-10">
             {QUESTIONS.map((question) => {
-              return <div>{question.question}</div>;
+              return <SingleQuestion key={question.id} {...question} />;
             })}
           </div>
         </div>
