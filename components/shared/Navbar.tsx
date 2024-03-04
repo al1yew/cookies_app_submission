@@ -32,7 +32,7 @@ const Navbar = () => {
     >
       <Container>
         <div className="flex justify-between items-center">
-          <span className="flexCenter sm:hidden px-2">
+          <span className="flex justify-center items-center sm:hidden px-2">
             <Image
               src="/images/menu.svg"
               width={24}
