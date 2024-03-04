@@ -15,7 +15,7 @@ const Management = () => {
             alt="cells"
             className="hidden lg:block absolute opacity-40 top-40 -left-32 w-2/3  z-[-2]"
           />
-          <h2 className="text-[#7B6969] font-normal text-md tracking-widest text-center">
+          <h2 className="text-[#7B6969] font-normal text-md text-center tracking-8">
             COOKIE MANAGEMENT
           </h2>
           <h1 className="font-black text-[32px] lg:text-[44px] text-center">

@@ -51,7 +51,7 @@ const Benefits = () => {
               <h2 className="font-black text-2xl mb-3">User Consent Logging</h2>
               <p className="font-medium text-md text-[#110000]">
                 Reliable consent record-keeping. Securely log user consents to
-                maintain comprehensive compliance records
+                maintain comprehensive records
               </p>
               <Image
                 src="/images/user.svg"
