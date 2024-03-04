@@ -2,24 +2,34 @@
 import { useState } from "react";
 
 const HeroForm = () => {
-  const [error, setError] = useState("");
-  const [formData, setFormData] = useState({
-    url: "",
-  });
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    if (!formData.url.startsWith("https://")) {
-      setError('Please enter a valid URL starting with "https://".');
-      return;
-    }
-
-    //do axios
-
-    setFormData({
+    const [formData, setFormData] = useState({
       url: "",
     });
-  };
+    const [error, setError] = useState("");
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+      const { name, value } = e.target;
+      setFormData({
+        ...formData,
+        [name]: value,
+      });
+      setError("");
+    };
+
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+      e.preventDefault();
+      if (!formData.url.startsWith("https://")) {
+        setError('Please enter a valid URL starting with "https://".');
+        return;
+      }
+
+      //potom axios
+
+      setFormData({
+        url: "",
+      });
+    };
+
 
   return (
     <form
