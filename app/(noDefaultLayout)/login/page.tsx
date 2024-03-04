@@ -6,7 +6,7 @@ const Login = () => {
   return (
     <section className="w-full relative h-screen flex justify-center items-center">
       <div className="flex w-full justify-center items-center h-screen flex-wrap">
-        <div className="bg-gradient-to-l from-gray-100 to-transparent bg-blur lg:flex-1 h-full py-5 flex flex-col justify-between px-4 lg:pl-20 lg:pr-8 xl:pl-32 xl:pr-16">
+        <div className="bg-gradient-to-l from-gray-100 to-transparent lg:flex-1 h-full py-5 flex flex-col justify-between px-4 lg:pl-20 lg:pr-8 xl:pl-32 xl:pr-16">
           <Link
             href="/"
             className="flexStart w-fit [&>*:first-child]:hover:rotate-180"
@@ -24,15 +24,19 @@ const Login = () => {
             <h1 className="font-black lg:text-[56px] text-2xl mb-12">Login</h1>
             <form
               action=""
-              className="rounded-3xl  flex flex-col justify-between items-start p-10 shadow-2xl"
+              className="rounded-3xl flex flex-col gap-5 justify-between items-start p-10 shadow-2xl"
             >
               <input
                 type="text"
-                className="p-3 text-gray-100 italic border border-gray-100 rounded-2xl"
+                className="font-bold p-5 text-gray-100 italic border border-gray-100 rounded-xl w-full"
                 placeholder="Email"
               />
-              <input type="password" name="" id="" />
-              <button>Login arrow</button>
+              <input
+                type="password"
+                placeholder="Password"
+                className="font-bold p-5 text-gray-100 italic border border-gray-100 rounded-xl w-full"
+              />
+              <button className="">Login arrow</button>
             </form>
             <div>do not have account? reg</div>
           </div>
