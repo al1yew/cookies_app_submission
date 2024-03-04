@@ -1,15 +1,15 @@
 "use client";
 
 import Image from "next/image";
-import Container from "./Container";
-import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import Container from "./Container";
 import { HEADERLINKS } from "@/lib/constants";
+import { useEffect, useRef, useState } from "react";
 
 const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [sidebarIsShown, setSidebarIsShown] = useState(false);
   const sidebarRef = useRef<HTMLDivElement>(null);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,6 +28,20 @@ const Navbar = () => {
     };
   }, []);
 
+  useEffect(() => {
+    document.addEventListener("mousedown", handleOutsideClicks);
+
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClicks);
+    };
+  }, [sidebarRef]);
+
+  const handleOutsideClicks = (e: MouseEvent) => {
+    if (sidebarRef.current && !sidebarRef.current.contains(e.target as Node)) {
+      setSidebarIsShown(false);
+    }
+  };
+
   return (
     <header
       className={`w-full z-[99999] fixed top-0 left-0 bg-transparent duration-200 ${
@@ -35,8 +49,11 @@ const Navbar = () => {
       }`}
     >
       <Container>
-        <div className="flex justify-between items-center">
-          <span className="flex justify-center items-center sm:hidden px-2">
+        <div className="flexBetween">
+          <span
+            className="flexCenter sm:hidden px-2"
+            onClick={() => setSidebarIsShown(true)}
+          >
             <Image
               src="/images/menu.svg"
               width={24}
@@ -75,6 +92,17 @@ const Navbar = () => {
                 );
               })}
             </ul>
+            <span
+              className="absolute top-0 right-0 rounded-full text-3xl p-3 cursor-pointer"
+              onClick={() => setSidebarIsShown(false)}
+            >
+              <Image
+                src="/images/close.svg"
+                width={25}
+                height={25}
+                alt="close"
+              />
+            </span>
           </div>
 
           <Link
@@ -90,7 +118,6 @@ const Navbar = () => {
             />
             <span className="ml-4 font-black text-2xl">Cookie Service</span>
           </Link>
-
           <ul className="hidden lg:flex justify-end items-center">
             {HEADERLINKS.map((link, i) => {
               return (
@@ -105,7 +132,6 @@ const Navbar = () => {
               );
             })}
           </ul>
-
           <span className="block lg:hidden"></span>
           <div className="block lg:hidden" />
         </div>
