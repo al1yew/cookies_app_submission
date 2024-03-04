@@ -30,9 +30,9 @@ const Hero = () => {
               className="z-10"
             />
             <Image
-              src="/images/tick.svg"
-              width={75}
-              height={75}
+              src="/images/check.svg"
+              width={120}
+              height={120}
               alt="tick"
               className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 z-20"
             />
