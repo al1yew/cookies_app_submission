@@ -57,3 +57,30 @@ export const STEPS = [
     text: "Benefit from our continuous monitoring and updates, keeping your website compliant with evolving regulations.",
   },
 ];
+
+export const PRICING_PLANS = [
+  {
+    name: "Basic",
+    text: "For small business and startups",
+    price: "10",
+    timeRange: 1,
+    options: [
+      "Lorem ipsum dolor sit amet",
+      "Lorem ipsum dolor sit amet",
+      "Lorem ipsum dolor sit amet",
+    ],
+    isPreferred: false,
+  },
+  {
+    name: "Premium",
+    text: "For medium business with growing traffic",
+    price: "40",
+    timeRange: 1,
+    options: [
+      "Lorem ipsum dolor sit amet",
+      "Lorem ipsum dolor sit amet",
+      "Lorem ipsum dolor sit amet",
+    ],
+    isPreferred: true,
+  },
+];
