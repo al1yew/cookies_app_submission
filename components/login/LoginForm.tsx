@@ -56,6 +56,7 @@ const LoginForm = () => {
         name="email"
         type="email"
         id="email"
+        value={formData.email}
         onChange={(e) => handleChange(e)}
         className="font-bold p-3 lg:text-lg text-md outline-none italic border-2 border-gray-100 rounded-xl w-full"
         placeholder="Email"
@@ -64,6 +65,7 @@ const LoginForm = () => {
         name="password"
         type="password"
         id="password"
+        value={formData.password}
         onChange={(e) => handleChange(e)}
         placeholder="Password"
         className="font-bold p-3 lg:text-lg text-md outline-none italic border-2 border-gray-100 rounded-xl w-full"
