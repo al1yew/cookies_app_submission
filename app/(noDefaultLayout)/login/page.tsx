@@ -116,12 +116,19 @@ const Login = () => {
           <div></div>
         </div>
       </div>
-      <div className="right lg:flex-1 flex flex-col gap-4">
+      <div className="right lg:flex-1 flex flex-col gap-4 py-5 px-4 lg:pr-20 lg:pl-8 xl:pr-32 xl:pl-16">
         <h1 className="font-black text-[40px]">Automated Compliance Updates</h1>
         <p className="font-medium text-xl text-[#110000]">
           Stay current with evolving laws. Our service automatically aligns your
           site with the latest cookie regulations.
         </p>
+        <Image
+          src="/images/ring.svg"
+          width={460}
+          height={460}
+          alt="ring"
+          className="-rotate-[30] absolute bottom-0 right-0 hidden lg:block"
+        />
       </div>
     </section>
   );
