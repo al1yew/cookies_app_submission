@@ -21,7 +21,23 @@ const LoginForm = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    //validate
+
+    if (!formData.email.trim()) {
+      setError("Please enter your email.");
+      return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email.trim())) {
+      setError("Please enter a valid email address.");
+      return;
+    }
+
+    if (!formData.password.trim()) {
+      setError("Please enter your password.");
+      return;
+    }
+
     //axios
 
     setFormData({
