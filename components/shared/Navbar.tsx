@@ -45,7 +45,6 @@ const Navbar = () => {
           </span>
 
           {/* sidebar */}
-          {/* header links */}
 
           <Link
             href="/"
@@ -60,6 +59,11 @@ const Navbar = () => {
             />
             <span className="ml-4 font-black text-2xl">Cookie Service</span>
           </Link>
+
+          {/* header links */}
+
+          
+
         </div>
       </Container>
     </header>
