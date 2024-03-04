@@ -18,7 +18,7 @@ const Management = () => {
           <h2 className="text-[#7B6969] font-normal text-md text-center tracking-8">
             COOKIE MANAGEMENT
           </h2>
-          <h1 className="font-black text-[32px] lg:text-[44px] text-center">
+          <h1 className="font-black text-32 lg:text-44 text-center">
             Your Path to Easy Compliance
           </h1>
         </div>

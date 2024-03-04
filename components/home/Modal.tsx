@@ -47,7 +47,7 @@ const Modal = () => {
           >
             <Image src="/images/close.svg" width={25} height={25} alt="close" />
           </span>
-          <h1 className="text-5xl lg:text-[64px] text-black font-black mb-8">
+          <h1 className="text-5xl lg:text-64 text-black font-black mb-8">
             GDPR
           </h1>
           <p className="text-xl font-medium mb-6">

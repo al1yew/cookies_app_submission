@@ -21,7 +21,7 @@ const Login = () => {
             <span className="ml-4 font-black text-2xl">Cookie Service</span>
           </Link>
           <div className="flex flex-col gap-6">
-            <h1 className="font-black lg:text-[48px] text-3xl mb-5">Login</h1>
+            <h1 className="font-black lg:text-48 text-3xl mb-5">Login</h1>
             <LoginForm />
             <div className="rounded-3xl bg-black lg:px-7 lg:py-4 p-4 flex items-center justify-between ">
               <div className="w-fit text-white font-medium lg:text-lg text-sm">
@@ -48,7 +48,7 @@ const Login = () => {
         </div>
       </div>
       <div className="right lg:flex-1 flex flex-col gap-4 py-5 px-4 lg:pr-20 lg:pl-8 xl:pr-32 xl:pl-16">
-        <h1 className="font-black text-[40px]">
+        <h1 className="font-black text-40">
           Automated <br /> Compliance Updates
         </h1>
         <p className="font-medium text-xl text-[#110000] max-w-[90%]">

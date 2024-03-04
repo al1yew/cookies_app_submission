@@ -13,7 +13,7 @@ const Feedback = () => {
               in cras ullamcorper viverra ac malesuada. Venenatis proin non
               magna ullamcorper nec adipiscing condimentum.
             </p>
-            <h1 className="capitalize mt-6 lg:mt-10 font-black text-[44px]">
+            <h1 className="capitalize mt-6 lg:mt-10 font-black text-44">
               John Doe
             </h1>
             <h3 className="uppercase text-[#7B6969] text-md font-normal tracking-widest">

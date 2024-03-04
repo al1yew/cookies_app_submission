@@ -19,7 +19,7 @@ const Hero = () => {
           className="hidden lg:block absolute -top-44 -left-0 w-1/2 h-screen z-[-2] rotate-180"
         />
         <div className="w-full px-10 lg:w-2/3 mx-auto flex flex-col ">
-          <h1 className="font-black lg:text-[80px] text-[56px]">GDPR</h1>
+          <h1 className="font-black lg:text-80 text-56">GDPR</h1>
           <h5 className="lg:text-lg font-medium text-[#7B6969] uppercase tracking-[6px]">
             Why It Matters for Your Website
           </h5>
