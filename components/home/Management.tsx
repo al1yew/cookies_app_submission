@@ -2,6 +2,7 @@ import Image from "next/image";
 import Container from "../shared/Container";
 import Link from "next/link";
 import Button from "../shared/Button";
+import { STEPS } from "@/lib/constants";
 
 const Management = () => {
   return (
@@ -65,7 +66,19 @@ const Management = () => {
           />
         </div>
         <div className="flex justify-between w-full flex-wrap px-4 lg:px-16 items-center gap-10 lg:gap-32 mt-12">
-          3 steps
+          {STEPS.map((step, i) => {
+            return (
+              <div key={i} className="w-full flex flex-col lg:flex-1">
+                <Image
+                  className="mb-3"
+                  src={step.icon}
+                  height={24}
+                  width={24}
+                  alt="icon"
+                />
+              </div>
+            );
+          })}
         </div>
         <Button />
         {/* reusable button again */}
