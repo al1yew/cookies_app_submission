@@ -53,10 +53,32 @@ const Hero = () => {
             <strong className="text-black">Cookie Management Services</strong>{" "}
             <br /> Tailored for Your Business Needs.
           </h5>
-          {/* form */}
+          {/* form use client to other component*/}
           <div className="flex justify-between gap-4 hide-scrollbar items-center w-full overflow-x-scroll mt-4 lg:mt-0">
             {COOKIE_TYPES.map((cookieType, i) => {
-              return <Link href={cookieType.link}></Link>;
+              return (
+                <Link
+                  href={cookieType.link}
+                  className="rounded-full bg-gradient-to-r from-gray-100 via-gray-50 to-white p-[1px] 
+                  flex items-center justify-center
+                  hover:to-gray-100 hover:via-gray-100"
+                >
+                  <span
+                    key={i}
+                    className="flex justify-between items-center gap-2 bg-white rounded-full px-3 py-1"
+                  >
+                    <Image
+                      src="/images/minitick.svg"
+                      width={16}
+                      height={16}
+                      alt="minitick"
+                    />
+                    <span className="text-sm text-medium">
+                      {cookieType.name}
+                    </span>
+                  </span>
+                </Link>
+              );
             })}
           </div>
           <p className="text-sm lg:text-md font-normal text-center text-[#898080] mt-4 lg:mt-0">
