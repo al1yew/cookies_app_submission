@@ -13,7 +13,7 @@ export default function Home() {
       <Hero />
       <Benefits />
       <Management />
-      <PricingPlans />
+      <PricingPlans isHomePage={true} />
       <Feedback />
       <FAQ />
     </>

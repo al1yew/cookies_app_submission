@@ -4,7 +4,7 @@ import { PRICING_PLANS } from "@/lib/constants";
 import Image from "next/image";
 import Link from "next/link";
 
-const PricingPlans = () => {
+const PricingPlans = ({ isHomePage }: { isHomePage?: boolean }) => {
   return (
     <section className="w-full relative mt-24 mb-24">
       <div className="max-w-[1320px] mx-auto px-0 lg:px-10 xl:px-15">
@@ -15,7 +15,7 @@ const PricingPlans = () => {
           <h1 className="lg:text-5xl text-3xl font-black text-center mt-2 lg:mt-0 mb-8 lg:mb-4 text-white">
             Find Your Perfect Plan
           </h1>
-          <div>
+          {isHomePage && (
             <Image
               src="/images/squares.svg"
               width={400}
@@ -23,7 +23,7 @@ const PricingPlans = () => {
               alt="squares"
               className="absolute -right-[40%] -top-24 hidden lg:block"
             />
-          </div>
+          )}
           <div
             className="lg:absolute lg:-bottom-20 lg:left-1/2 lg:-translate-x-1/2 lg:gap-6 lg:w-5/6
           flex flex-wrap flex-col lg:flex-row justify-center items-center gap-3 w-full"

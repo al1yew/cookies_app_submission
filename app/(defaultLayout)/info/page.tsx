@@ -15,7 +15,7 @@ const Info = () => {
       <Hero />
       <Features />
       <Characteristics />
-      <PricingPlans />
+      <PricingPlans isHomePage={false} />
     </>
   );
 };
