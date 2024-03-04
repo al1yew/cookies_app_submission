@@ -34,7 +34,7 @@ const HeroForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="p-3 bg-[#FAFAFA] rounded-2xl w-full grid grid-cols-1 lg:grid-cols-3 gap-y-4 lg:gap-4 border border-gray-100 mt-4 lg:mt-0"
+      className="p-4 bg-[#FAFAFA] rounded-2xl w-full grid grid-cols-1 lg:grid-cols-3 gap-y-4 lg:gap-4 border border-gray-100 mt-4 lg:mt-0"
     >
       <input
         placeholder="Your Website..."
@@ -47,8 +47,7 @@ const HeroForm = () => {
       />
       <button
         type="submit"
-        className="bg-appRed text-white lg:rounded-l-xl lg:rounded-r-3xl rounded-full flex justify-center gap-4 
-        lg:gap-0  items-center 
+        className="bg-appRed text-white lg:rounded-l-xl lg:rounded-r-3xl rounded-full flex justify-center items-center 
         py-3 col-span-1 [&>*]:hover:scale-105"
       >
         <span className="text-white text-lg tracking-wide transition-transform transform">

@@ -3,7 +3,7 @@ import Container from "../shared/Container";
 
 const Benefits = () => {
   return (
-    <section className="w-full relative mt-40">
+    <section className="w-full relative lg:mt-40 mt-20">
       <Container>
         <div>
           <h2 className="text-[#7B6969] font-normal text-md tracking-widest text-center lg:text-start">
