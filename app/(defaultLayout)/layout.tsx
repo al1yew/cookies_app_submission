@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "../globals.css";
+import Navbar from "@/components/shared/Navbar";
+import Footer from "@/components/shared/Footer";
 import localFont from "next/font/local";
 
 export const satoshi = localFont({
@@ -35,7 +37,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={satoshi.className}>
+        <Navbar />
         <main className="relative overflow-hidden">{children}</main>
+        <Footer />
       </body>
     </html>
   );
