@@ -28,7 +28,7 @@ const config: Config = {
         "180": "180%",
       },
       letterSpacing: {
-        "8": "8px",
+        "8": "6px",
       },
     },
   },

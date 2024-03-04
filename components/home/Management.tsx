@@ -55,7 +55,10 @@ const Management = () => {
             </span>
           </Link>
         </div>
-        <div className="rounded-3xl border border-gray-100 mx-auto w-fit mt-8 ">
+        <div
+          className="rounded-3xl border-[1.5px] border-white mx-auto w-fit mt-8 "
+          style={{ boxShadow: "0 -14px 52px 1px rgba(0, 0, 0, 0.12)" }}
+        >
           <Image
             src="/images/videoimg.png"
             width={600}
