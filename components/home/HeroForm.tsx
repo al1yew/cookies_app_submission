@@ -46,6 +46,7 @@ const HeroForm = () => {
         className="p-3 rounded-xl outline-none col-span-1 lg:col-span-2 italic border border-gray-100 font-medium tracking-wider"
       />
       <Button />
+      {/* reusable button */}
       {error && (
         <p className="text-appRed text-sm lg:text-md col-span-1 lg:col-span-3">
           {error}

@@ -2,11 +2,29 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import Button from "../shared/Button";
 
 const Modal = () => {
   const [modalIsOpen, setModalIsOpen] = useState(true);
   const modalRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleOutsideClicks = (event: MouseEvent) => {
+      if (
+        modalRef.current &&
+        !modalRef.current.contains(event.target as Node)
+      ) {
+        setModalIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleOutsideClicks);
+
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClicks);
+    };
+  }, []);
 
   return (
     modalIsOpen && (
@@ -41,6 +59,16 @@ const Modal = () => {
           <Link className="text-appRed font-black text-xl mb-10" href="/">
             Learn More
           </Link>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 w-full">
+            <button
+              className="bg-black rounded-full col-span-1 text-center p-3 text-white font-bold text-xl"
+              onClick={() => setModalIsOpen(false)}
+            >
+              Close
+            </button>
+            <Button />
+            {/* reusable button again */}
+          </div>
         </div>
       </div>
     )
