@@ -20,25 +20,60 @@ const Login = () => {
             />
             <span className="ml-4 font-black text-2xl">Cookie Service</span>
           </Link>
-          <div>
-            <h1 className="font-black lg:text-[56px] text-2xl mb-12">Login</h1>
+          <div className="flex flex-col gap-4">
+            <h1 className="font-black lg:text-[56px] text-2xl mb-8">Login</h1>
             <form
               action=""
               className="rounded-3xl flex flex-col gap-5 justify-between items-start p-10 shadow-2xl"
             >
               <input
-                type="text"
-                className="font-bold p-5 text-gray-100 italic border border-gray-100 rounded-xl w-full"
+                type="email"
+                className="font-bold p-5 outline-none italic border-2 border-gray-100 rounded-xl w-full"
                 placeholder="Email"
               />
               <input
                 type="password"
                 placeholder="Password"
-                className="font-bold p-5 text-gray-100 italic border border-gray-100 rounded-xl w-full"
+                className="font-bold p-5 outline-none italic border-2 border-gray-100 rounded-xl w-full"
               />
-              <button className="self-end">Login arrow</button>
+              <button
+                className="self-end bg-appRed text-white 
+                flex justify-center gap-4 lg:gap-0 lg:justify-around 
+                items-center p-3 px-5 rounded-full [&>*]:hover:scale-105"
+              >
+                <span className="text-white text-lg tracking-wide transition-transform transform">
+                  Login
+                </span>
+                <Image
+                  src="/images/arrow.svg"
+                  width={25}
+                  height={24}
+                  alt="arrow"
+                  className="transition-transform transform ml-5"
+                />
+              </button>
             </form>
-            <div>do not have account? reg</div>
+            <div className="rounded-3xl bg-black px-7 py-4 flex items-center justify-between">
+              <div className="w-fit text-white font-medium text-xl">
+                Do not have an account yet?
+              </div>
+              <button
+                className=" bg-white text-black 
+                flex justify-center gap-4 lg:gap-0 lg:justify-around 
+                items-center p-3 px-5 rounded-full [&>*]:hover:scale-105"
+              >
+                <span className="text-white text-lg tracking-wide transition-transform transform">
+                  Login
+                </span>
+                <Image
+                  src="/images/arrow.svg"
+                  width={25}
+                  height={24}
+                  alt="arrow"
+                  className="transition-transform transform ml-5"
+                />
+              </button>
+            </div>
           </div>
           <div></div>
         </div>
