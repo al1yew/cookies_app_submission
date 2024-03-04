@@ -2,6 +2,7 @@ import Image from "next/image";
 import Container from "../shared/Container";
 import { COOKIE_TYPES } from "@/lib/constants";
 import Link from "next/link";
+import HeroForm from "./HeroForm";
 
 const Hero = () => {
   return (
@@ -37,6 +38,7 @@ const Hero = () => {
             />
           </div>
         </div>
+        {/* absolute left-1/2 top-20 -translate-x-1/2  */}
         <div
           className="mt-32
         mx-auto lg:w-[869px] shadow-2xl rounded-3xl z-30 
@@ -53,7 +55,7 @@ const Hero = () => {
             <strong className="text-black">Cookie Management Services</strong>{" "}
             <br /> Tailored for Your Business Needs.
           </h5>
-          {/* form use client to other component*/}
+          <HeroForm />
           <div className="flex justify-between gap-4 hide-scrollbar items-center w-full overflow-x-scroll mt-4 lg:mt-0">
             {COOKIE_TYPES.map((cookieType, i) => {
               return (
