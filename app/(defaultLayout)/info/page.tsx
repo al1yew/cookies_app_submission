@@ -1,3 +1,6 @@
+import PricingPlans from "@/components/home/PricingPlans";
+import Characteristics from "@/components/info/Characteristics";
+import Features from "@/components/info/Features";
 import Hero from "@/components/info/Hero";
 import { Metadata } from "next";
 
@@ -10,6 +13,9 @@ const Info = () => {
   return (
     <>
       <Hero />
+      <Features />
+      <Characteristics />
+      <PricingPlans />
     </>
   );
 };
