@@ -1,4 +1,4 @@
-import PricingPlans from "@/components/home/PricingPlans";
+import PricingPlans from "@/components/shared/PricingPlans";
 import Characteristics from "@/components/info/Characteristics";
 import Features from "@/components/info/Features";
 import Hero from "@/components/info/Hero";
