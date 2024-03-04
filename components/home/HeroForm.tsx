@@ -9,9 +9,16 @@ const HeroForm = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    //validate
+    if (!formData.url.startsWith("https://")) {
+      setError('Please enter a valid URL starting with "https://".');
+      return;
+    }
+
     //do axios
-    //reset formdata
+
+    setFormData({
+      url: "",
+    });
   };
 
   return (
@@ -25,6 +32,7 @@ const HeroForm = () => {
         id="url"
         name="url"
         value={formData.url}
+        className="p-3 rounded-xl outline-none col-span-1 lg:col-span-2 italic border border-gray-100 font-medium tracking-wider"
       />
       <button type="submit">dsadsad</button>
       {error && (
