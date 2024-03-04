@@ -30,7 +30,12 @@ const Management = () => {
               What is Cookie Consent
             </span>
             <span>
-             img
+              <Image
+                src="/images/miniarrow.svg"
+                width={16}
+                height={16}
+                alt="mini arrow"
+              />
             </span>
           </Link>
           <Link
@@ -39,7 +44,13 @@ const Management = () => {
           >
             <span className="text-sm mr-3 font-medium">FAQ </span>
             <span>
-              img
+              <Image
+                src="/images/miniarrow.svg"
+                width={16}
+                height={16}
+                alt="mini arrow"
+                className="rotate-90"
+              />
             </span>
           </Link>
         </div>
