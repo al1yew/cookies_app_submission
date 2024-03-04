@@ -11,8 +11,11 @@ const Footer = () => {
           className="bg-[#FBFBFB] rounded-3xl p-5 xl:w-11/12 lg:w-full lg:max-w-[1100px] w-full mx-auto flex flex-col lg:flex-row 
         justify-between items-center"
         >
-          <Link href="/" className="flex items-end justify-start w-fit">
-            <div className="flex items-center justify-start [&>*:first-child]:hover:rotate-180">
+          <div className="flex items-end">
+            <Link
+              href="/"
+              className="flex items-center justify-start [&>*:first-child]:hover:rotate-180"
+            >
               <Image
                 src="/images/logo.svg"
                 alt="Cookies Logo"
@@ -23,11 +26,11 @@ const Footer = () => {
               <span className="ml-4 font-black text-2xl whitespace-nowrap">
                 Cookie Service
               </span>
-            </div>
-            <span className="text-[#919191] font-normal text-xs ml-2">
+            </Link>
+            <span className="text-[#919191] font-normal text-xs ml-2 whitespace-nowrap">
               By INCORE
             </span>
-          </Link>
+          </div>
           <ul className="flex flex-col lg:flex-row lg:justify-end justify-center items-center w-full">
             {FOOTERLINKS.map((link, i) => {
               if (link.isRound) {
