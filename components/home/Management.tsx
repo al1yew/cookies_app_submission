@@ -88,7 +88,7 @@ const Management = () => {
         </div>
         <button
           className="mt-16 mx-auto bg-appRed text-white 
-          flex justify-center gap-4 w-full lg:w-fit lg:gap-0 lg:justify-around 
+          flex justify-center w-full lg:w-fit lg:gap-0 lg:justify-around 
           items-center p-3 px-5 rounded-full [&>*]:hover:scale-105"
         >
           <span className="text-white text-lg tracking-wider transition-transform transform ">
