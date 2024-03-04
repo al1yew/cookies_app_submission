@@ -69,18 +69,18 @@ const Modal = () => {
             </button>
             <Link
               href="/info"
-              className="bg-red text-white flex justify-center gap-4 lg:gap-0 lg:justify-around items-center 
+              className="bg-appRed text-white flex justify-center items-center 
               py-3 rounded-full [&>*]:hover:scale-105 col-span-1"
             >
-              <span className="text-lg tracking-wide transition-transform transform text-appRed">
+              <span className="text-lg tracking-wide transition-transform transform text-white">
                 Check Your Website
               </span>
               <Image
-                src="/images/miniarrow.svg"
+                src="/images/arrow.svg"
                 width={25}
                 height={24}
                 alt="arrow"
-                className="transition-transform transform"
+                className="transition-transform transform ml-4"
               />{" "}
             </Link>
           </div>

@@ -18,12 +18,12 @@ const Hero = () => {
           alt="cells"
           className="hidden lg:block absolute -top-44 -left-0 w-1/2 h-screen z-[-2] rotate-180"
         />
-        <div className="w-full px-10 lg:w-2/3 mx-auto flex flex-col gap-4 lg:gap-8 tracking-widest ">
+        <div className="w-full px-10 lg:w-2/3 mx-auto flex flex-col ">
           <h1 className="font-black lg:text-[80px] text-[56px]">GDPR</h1>
-          <h5 className="lg:text-lg font-medium text-[#7B6969] uppercase">
+          <h5 className="lg:text-lg font-medium text-[#7B6969] uppercase tracking-[6px]">
             Why It Matters for Your Website
           </h5>
-          <p className="font-normal lg:text-xl text-lg mt-3 text-[#5B5B5B]">
+          <p className="font-normal lg:text-xl text-lg mt-8 text-[#5B5B5B] leading-180">
             In today's digital landscape, data privacy has become a paramount
             concern, and the General Data Protection Regulation (GDPR) stands at
             the forefront of this movement. As an EU law, GDPR sets stringent
@@ -34,7 +34,7 @@ const Hero = () => {
           <Link
             href="/login"
             className="bg-appRed text-white flex justify-center gap-4 lg:gap-0 lg:justify-around items-center 
-        py-3 px-8 rounded-full w-fit [&>*]:hover:scale-105"
+        py-3 px-8 rounded-full w-fit [&>*]:hover:scale-105 mt-10"
           >
             <span className="text-lg tracking-wide transition-transform transform text-white mr-5">
               Get Complaint Now

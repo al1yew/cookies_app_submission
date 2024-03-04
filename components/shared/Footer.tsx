@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="w-full relative mt-16 mb-12">
       <Container>
         <div
-          className="bg-[#FBFBFB] rounded-3xl p-5 xl:w-11/12 lg:w-full lg:max-w-[1100px] w-full mx-auto flex flex-col lg:flex-row 
+          className="bg-[#FBFBFB] rounded-3xl p-5 xl:w-11/12 lg:w-full lg:max-w-[1100px] gap-4 w-full mx-auto flex flex-col lg:flex-row 
         justify-between items-center"
         >
           <div className="flex items-end">
@@ -31,7 +31,7 @@ const Footer = () => {
               By INCORE
             </span>
           </div>
-          <ul className="flex flex-col lg:flex-row lg:justify-end justify-center items-center w-full">
+          <ul className="flex flex-col lg:flex-row lg:justify-end justify-center items-center">
             {FOOTERLINKS.map((link, i) => {
               if (link.isRound) {
                 return (
