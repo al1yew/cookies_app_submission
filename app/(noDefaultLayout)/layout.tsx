@@ -1,5 +1,5 @@
 import localFont from "next/font/local";
-
+import "../globals.css";
 export const satoshi = localFont({
   src: [
     {
@@ -32,7 +32,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className={satoshi.className}>
         <main className="overflow-hidden relative">{children}</main>
       </body>
     </html>
