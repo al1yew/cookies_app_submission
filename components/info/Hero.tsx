@@ -18,9 +18,9 @@ const Hero = () => {
           alt="cells"
           className="hidden lg:block absolute top-12 -left-0 w-1/2 h-screen z-[-2] rotate-180"
         />
-        <div className="w-full px-10 lg:w-2/3 mx-auto flex flex-col gap-8 tracking-widest ">
-          <h1 className="font-black lg:text-[80px] text-3xl">GDPR</h1>
-          <h5 className="lg:text-lg text-md font-medium text-[#7B6969] uppercase">
+        <div className="w-full px-10 lg:w-2/3 mx-auto flex flex-col gap-4 lg:gap-8 tracking-widest ">
+          <h1 className="font-black lg:text-[80px] text-[56px]">GDPR</h1>
+          <h5 className="lg:text-lg font-medium text-[#7B6969] uppercase">
             Why It Matters for Your Website
           </h5>
           <p className="font-normal lg:text-xl text-lg mt-3 text-[#5B5B5B]">

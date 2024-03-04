@@ -168,3 +168,18 @@ export const FEATURES = [
     text: "Affects any website accessed by EU residents, regardless of location.",
   },
 ];
+
+export const CHARACTERISTICS = [
+  {
+    title: "The Essence of GDPR",
+    text: "At its core, GDPR is about giving individuals more control over their personal data. This means that websites must ensure transparent data collection, secure handling of personal information, and respect for users' privacy rights. Non-compliance can lead to significant penalties, making GDPR an issue that no website oner can afford to overlook.",
+  },
+  {
+    title: "Impact on Your Website",
+    text: "Your website is more than a business card; it's a data hub. From cookies to contact forms, every interaction potentially involves personal data. Under GDPR, it's your responsibility to ensure that this data is handled lawfully and ethically. This includes obtaining explicit consent for cookies, which are often used for everything from analytics to personalization.",
+  },
+  {
+    title: "How Can You Ensure Compliance?",
+    text: "Staying compliant can seem daunting, but this is where our service comes into play. We specialize in analyzing websites for GDPR compliance, particularly focusing on cookie management. Our automated tools can scan your website, identify areas that fall short of GDPR standards, and provide you with a detailed report.",
+  },
+];
