@@ -29,8 +29,29 @@ const Footer = () => {
               By INCORE
             </span>
           </Link>
+          {/* consider merging footer and header, they look same */}
           <ul className="flex flex-col lg:flex-row lg:justify-end justify-center items-center">
             {FOOTERLINKS.map((link, i) => {
+              if (link.isRound) {
+                return (
+                  <li className="mt-8 lg:mt-0 lg:ml-8 py-2 px-4 rounded-full bg-black text-white">
+                    <Link
+                      href={link.href}
+                      className="flex justify-center gap-4 lg:gap-0 lg:justify-around items-center "
+                    >
+                      <span className="text-lg tracking-wide mr-4">
+                        {link.text}
+                      </span>
+                      <Image
+                        src="/images/arrow.svg"
+                        width={25}
+                        height={24}
+                        alt="arrow"
+                      />
+                    </Link>
+                  </li>
+                );
+              }
               return (
                 <li key={i} className="mt-8 lg:mt-0 text-center">
                   <Link
