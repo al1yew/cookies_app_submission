@@ -16,7 +16,7 @@ const Hero = () => {
           width={1}
           height={1}
           alt="cells"
-          className="hidden lg:block absolute top-12 -left-0 w-1/2 h-screen z-[-2] rotate-180"
+          className="hidden lg:block absolute -top-44 -left-0 w-1/2 h-screen z-[-2] rotate-180"
         />
         <div className="w-full px-10 lg:w-2/3 mx-auto flex flex-col gap-4 lg:gap-8 tracking-widest ">
           <h1 className="font-black lg:text-[80px] text-[56px]">GDPR</h1>
