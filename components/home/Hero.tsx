@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Container from "../shared/Container";
+import { COOKIE_TYPES } from "@/lib/constants";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -52,7 +54,11 @@ const Hero = () => {
             <br /> Tailored for Your Business Needs.
           </h5>
           {/* form */}
-          {/* gdpa things */}
+          <div className="flex justify-between gap-4 hide-scrollbar items-center w-full overflow-x-scroll mt-4 lg:mt-0">
+            {COOKIE_TYPES.map((cookieType, i) => {
+              return <Link href={cookieType.link}></Link>;
+            })}
+          </div>
           <p className="text-sm lg:text-md font-normal text-center text-[#898080] mt-4 lg:mt-0">
             Our comprehensive cookie consent services handle everything from
             initial cookie audits to ongoing compliance monitoring, ensuring
