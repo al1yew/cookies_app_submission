@@ -53,7 +53,27 @@ const Navbar = () => {
             ${sidebarIsShown ? "left-[0%]" : "-left-[100%]"} `}
           >
             <ul>
-              <li>links</li>
+              <li
+                className="mb-4 w-fit"
+                onClick={() => setSidebarIsShown(false)}
+              >
+                <Link href="/" className="font-bold text-xl">
+                  Home
+                </Link>
+              </li>
+              {HEADERLINKS.map((link, i) => {
+                return (
+                  <li
+                    key={i}
+                    className="mb-4"
+                    onClick={() => setSidebarIsShown(false)}
+                  >
+                    <Link href={link.href} className="font-bold text-xl">
+                      {link.text}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
