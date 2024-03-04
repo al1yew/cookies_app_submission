@@ -3,8 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import Container from "./Container";
-import { HEADERLINKS } from "@/lib/constants";
 import { useEffect, useRef, useState } from "react";
+import { HEADERLINKS } from "@/lib/constants";
 
 const Navbar = () => {
   const [sidebarIsShown, setSidebarIsShown] = useState(false);
