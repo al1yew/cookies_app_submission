@@ -2,12 +2,14 @@
 
 import Image from "next/image";
 import Container from "./Container";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { HEADERLINKS } from "@/lib/constants";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [sidebarIsShown, setSidebarIsShown] = useState(false);
+  const sidebarRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -45,7 +47,15 @@ const Navbar = () => {
             <span className="h-8 w-[0.5px] bg-gray-300 ml-4"></span>
           </span>
 
-          {/* sidebar */}
+          <div
+            ref={sidebarRef}
+            className={`sidebar z-[999999] absolute top-0 bg-white bg-opacity-90 h-screen w-[80%] max-w-[300px] duration-300 p-10 
+            ${sidebarIsShown ? "left-[0%]" : "-left-[100%]"} `}
+          >
+            <ul>
+              <li>links</li>
+            </ul>
+          </div>
 
           <Link
             href="/"
