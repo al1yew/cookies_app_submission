@@ -47,7 +47,7 @@ const Benefits = () => {
                 className="translate-x-1/2 absolute bottom-0 right-1/2 "
               />
             </div>
-            <div className="w-full lg:w-[23%] h-[400px] bg-[#FBFBFB] rounded-2xl p-8 relative overflow-hidden border border-gray-100">
+            <div className="w-full lg:w-[24%] h-[400px] bg-[#FBFBFB] rounded-2xl p-8 relative overflow-hidden border border-gray-100">
               <h2 className="font-black text-2xl mb-3">User Consent Logging</h2>
               <p className="font-medium text-md text-[#110000]">
                 Reliable consent record-keeping. Securely log user consents to
@@ -55,10 +55,10 @@ const Benefits = () => {
               </p>
               <Image
                 src="/images/user.svg"
-                width={280}
-                height={280}
+                width={220}
+                height={220}
                 alt="ring"
-                className="absolute -bottom-5 right-1/2 translate-x-1/2"
+                className="absolute -bottom-4 right-1/2 translate-x-1/2"
               />
             </div>
           </div>

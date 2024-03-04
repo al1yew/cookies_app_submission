@@ -40,8 +40,9 @@ const Hero = () => {
           </div>
         </div>
         <div
+          style={{ boxShadow: "0 -20px 52px 1px rgba(0, 0, 0, 0.2)" }}
           className="mt-32
-        mx-auto lg:w-[869px] shadow-2xl rounded-3xl z-30 
+        mx-auto lg:w-[869px] rounded-3xl z-30 
         bg-white bg-opacity-95 flex flex-col items-center py-6 lg:py-12 px-4 lg:px-28 gap-1 lg:gap-4"
         >
           <h3 className="text-appRed text-md lg:text-2xl font-medium uppercase tracking-[8px] pt-8 lg:pt-0">
@@ -75,7 +76,7 @@ const Hero = () => {
                       height={16}
                       alt="minitick"
                     />
-                    <span className="text-sm text-medium">
+                    <span className="text-sm text-medium tracking-wider">
                       {cookieType.name}
                     </span>
                   </span>
@@ -83,7 +84,7 @@ const Hero = () => {
               );
             })}
           </div>
-          <p className="text-sm lg:text-md font-normal text-center text-[#898080] mt-4 lg:mt-0">
+          <p className="text-sm lg:text-md font-normal text-center text-[#898080] mt-4 lg:mt-0 leading-180">
             Our comprehensive cookie consent services handle everything from
             initial cookie audits to ongoing compliance monitoring, ensuring
             your website adheres to all relevant regulations without you having
