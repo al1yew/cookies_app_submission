@@ -13,6 +13,13 @@ const Characteristics = () => {
           alt="squares"
           className="absolute -right-36 -top-24 hidden lg:block"
         />
+        <Image
+          src="/images/shadow.svg"
+          width={400}
+          height={400}
+          alt="squares"
+          className="absolute left-0 -bottom-[80%] hidden lg:block"
+        />
         <div className="flex flex-col gap-8 lg:w-8/12 w-full mx-auto">
           {CHARACTERISTICS.map((char, i) => {
             return (
