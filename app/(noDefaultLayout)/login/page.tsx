@@ -34,7 +34,7 @@ const Login = () => {
   return (
     <section className="w-full relative h-screen flex justify-center items-center">
       <div className="flex w-full justify-center items-center h-screen flex-wrap">
-        <div className="bg-gradient-to-l from-gray-100 to-transparent lg:flex-1 h-full py-5 flex flex-col justify-between px-4 lg:pl-20 lg:pr-8 xl:pl-32 xl:pr-16">
+        <div className="bg-gradient-to-l from-gray-100 to-transparent lg:flex-1 h-full flex flex-col justify-between py-5 px-4 lg:pl-20 lg:pr-8 xl:pl-32 xl:pr-16">
           <Link
             href="/"
             className="flexStart w-fit [&>*:first-child]:hover:rotate-180"
@@ -52,14 +52,14 @@ const Login = () => {
             <h1 className="font-black lg:text-[48px] text-2xl mb-5">Login</h1>
             <form
               onSubmit={handleSubmit}
-              className="rounded-3xl flex flex-col gap-5 justify-between items-start p-8 shadow-2xl"
+              className="rounded-3xl flex flex-col gap-5 justify-between items-start p-7 shadow-2xl "
             >
               <input
                 name="email"
                 type="email"
                 id="email"
                 onChange={(e) => handleChange(e)}
-                className="font-bold p-4 text-lg outline-none italic border-2 border-gray-100 rounded-xl w-full"
+                className="font-bold p-3 text-lg outline-none italic border-2 border-gray-100 rounded-xl w-full"
                 placeholder="Email"
               />
               <input
@@ -68,7 +68,7 @@ const Login = () => {
                 id="password"
                 onChange={(e) => handleChange(e)}
                 placeholder="Password"
-                className="font-bold p-4 text-lg outline-none italic border-2 border-gray-100 rounded-xl w-full"
+                className="font-bold p-3 text-lg outline-none italic border-2 border-gray-100 rounded-xl w-full"
               />
               <div className="flex justify-between w-full items-center">
                 <p className=" text-appRed text-sm lg:text-md w-fit">{error}</p>
@@ -91,7 +91,7 @@ const Login = () => {
                 </button>
               </div>
             </form>
-            <div className="rounded-3xl bg-black px-7 py-4 flex items-center justify-between">
+            <div className="rounded-3xl bg-black px-7 py-4 flex items-center justify-between ">
               <div className="w-fit text-white font-medium text-xl">
                 Do not have an account yet?
               </div>
