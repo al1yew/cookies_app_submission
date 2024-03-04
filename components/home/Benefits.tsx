@@ -15,13 +15,41 @@ const Benefits = () => {
         </div>
         <div className="flex flex-col gap-5 mt-10">
           <div className="flex justify-between flex-wrap items-center w-full gap-5">
-            31 41 23 percent
+            <div className="w-full lg:w-[31%] h-[400px] bg-[#FBFBFB] rounded-2xl p-8 relative overflow-hidden border border-gray-100">
+              <h2 className="font-black text-2xl mb-3"></h2>
+              <p className="font-medium text-md text-[#110000]"></p>
+              <Image
+                src="/images/ring.svg"
+                width={460}
+                height={460}
+                alt="ring"
+                className="-rotate-[30] absolute bottom-0 right-0"
+              />
+            </div>
+            <div className="w-full lg:w-[41%] h-[400px] bg-black rounded-2xl p-8 relative overflow-hidden border border-gray-100">
+              <h2 className="font-black text-2xl mb-3 text-white"></h2>
+              <p className="font-medium text-md text-[#7B7B7B]"></p>
+              <Image
+                src="/images/table.svg"
+                width={480}
+                height={460}
+                alt="ring"
+                className="translate-x-1/2 absolute bottom-0 right-1/2 "
+              />
+            </div>
+            <div className="w-full lg:w-[23%] h-[400px] bg-[#FBFBFB] rounded-2xl p-8 relative overflow-hidden border border-gray-100">
+              <h2 className="font-black text-2xl mb-3">User Consent Logging</h2>
+              <Image
+                src="/images/user.svg"
+                width={280}
+                height={280}
+                alt="ring"
+                className="absolute -bottom-5 right-1/2 translate-x-1/2"
+              />
+            </div>
           </div>
           <div className="flex justify-between flex-wrap items-center w-full gap-5">
             <div className="w-full lg:w-[56%] h-[210px] bg-[#FBFBFB] rounded-2xl p-8 relative overflow-hidden border border-gray-100">
-              <h2 className="font-black text-2xl mb-3">
-                Real-time Cookie Scanning
-              </h2>
               <p className="font-medium text-md text-[#110000] max-w-[320px] text-wrap">
                 Instantly identify and categorize cookies.
                 <br />
@@ -44,13 +72,7 @@ const Benefits = () => {
                 className="hidden lg:block"
               />
               <div className="flex flex-col items-start justify-between">
-                <h2 className="font-black text-2xl mb-3 text-white">
-                  User Experience Optimization
-                </h2>
-                <p className="font-medium text-md text-[#7B7B7B]">
-                  Enhance visitor satisfaction. Balance compliance with an
-                  optimal user experience on your website.
-                </p>
+                <h2 className="font-black text-2xl mb-3 text-white"></h2>
               </div>
             </div>
           </div>
