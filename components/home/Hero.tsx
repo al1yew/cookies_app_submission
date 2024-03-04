@@ -20,6 +20,7 @@ const Hero = () => {
           alt="cells"
           className="hidden lg:block absolute -top-20 -right-0 w-1/2 h-screen z-[-2]"
         />
+
         <div className="absolute left-1/2 -top-18 -translate-x-1/2 -z-[1]">
           <div className="relative">
             <Image
@@ -38,7 +39,6 @@ const Hero = () => {
             />
           </div>
         </div>
-        {/* absolute left-1/2 top-20 -translate-x-1/2  */}
         <div
           className="mt-32
         mx-auto lg:w-[869px] shadow-2xl rounded-3xl z-30 
