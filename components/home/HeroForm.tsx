@@ -45,6 +45,10 @@ const HeroForm = () => {
         className="p-3 rounded-xl outline-none col-span-1 lg:col-span-2 italic border border-gray-100 font-medium tracking-wider"
       />
       <button type="submit">Get Started</button>
+      {/* this button can be component as it is reusable 
+      can be red, or white for payment component, if red, 
+      text is white, if white, text is red
+      send title, isRed, onclick, type*/}
       {error && (
         <p className="text-appRed text-sm lg:text-md col-span-1 lg:col-span-3">
           {error}
