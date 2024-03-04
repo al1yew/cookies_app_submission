@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import Button from "../shared/Button";
 
 const Modal = () => {
-  const [modalIsOpen, setModalIsOpen] = useState(true);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
   const modalRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {

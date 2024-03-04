@@ -8,14 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
       colors: {
         appRed: "#E50013",
         appGray: "#5B5B5B",
+      },
+      padding: {
+        "15": "60px",
       },
       zIndex: {
         1: "1",
