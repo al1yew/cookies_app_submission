@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="w-full relative mt-16 mb-12">
       <Container>
         <div
-          className="bg-[#FBFBFB] rounded-3xl p-5 lg:w-11/12 lg:max-w-[1100px] w-full mx-auto flex flex-col lg:flex-row 
+          className="bg-[#FBFBFB] rounded-3xl p-5 xl:w-11/12 lg:max-w-[1100px] w-full mx-auto flex flex-col lg:flex-row 
         justify-between items-center"
         >
           <Link

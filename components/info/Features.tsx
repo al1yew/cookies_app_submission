@@ -10,7 +10,12 @@ const Features = () => {
           {FEATURES.map((feature, i) => {
             return (
               <div className="col-span-1 flex flex-col justify-between">
-                <Image src={feature.icon} width={30} height={30} alt="icon" />
+                <Image
+                  src={feature.icon}
+                  width={i % 2 != 0 ? 30 : 25}
+                  height={i % 2 != 0 ? 30 : 25}
+                  alt="icon"
+                />
                 <h1 className="font-black lg:text-2xl text-xl mt-3 mb-5">
                   {feature.title}
                 </h1>
