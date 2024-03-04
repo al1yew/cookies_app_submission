@@ -24,6 +24,12 @@ const config: Config = {
       spacing: {
         "18": "72px",
       },
+      lineHeight: {
+        "180": "180%",
+      },
+      letterSpacing: {
+        "8": "8px",
+      },
     },
   },
   plugins: [],
