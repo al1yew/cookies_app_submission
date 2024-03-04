@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Container from "./Container";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -42,6 +43,23 @@ const Navbar = () => {
             />
             <span className="h-8 w-[0.5px] bg-gray-300 ml-4"></span>
           </span>
+
+          {/* sidebar */}
+          {/* header links */}
+
+          <Link
+            href="/"
+            className="flexStart [&>*:first-child]:hover:rotate-180"
+          >
+            <Image
+              src="/images/logo.svg"
+              alt="Cookies Logo"
+              width={27}
+              height={27}
+              className="transition-transform hover:rotate-180"
+            />
+            <span className="ml-4 font-black text-2xl">Cookie Service</span>
+          </Link>
         </div>
       </Container>
     </header>
