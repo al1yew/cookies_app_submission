@@ -117,3 +117,31 @@ export const QUESTIONS = [
       "Aliquam tristique sed vulputate amet. Amet a orci nunc risus scelerisque varius placerat bibendum tristique. Ut pharetra non eu in cras ullamcorper viverra ac malesuada. Venenatis proin non magna ullamcorper nec adipiscing condimentum. Lacus semper dignissim nisl lectus id vulputate elementum mauris leo.",
   },
 ];
+
+export const FOOTERLINKS = [
+  {
+    href: "/info",
+    text: "Learn More",
+    isRound: false,
+  },
+  {
+    href: "/pricing",
+    text: "Pricing",
+    isRound: false,
+  },
+  {
+    href: "/contact",
+    text: "Contact",
+    isRound: false,
+  },
+  {
+    href: "/legal",
+    text: "Legal Notice",
+    isRound: false,
+  },
+  {
+    href: "/login",
+    text: "Get Started",
+    isRound: true,
+  },
+];
