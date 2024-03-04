@@ -1,8 +1,36 @@
-import Container from "@/components/shared/Container";
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 const Login = () => {
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
+  const [error, setError] = useState("");
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+    setError("");
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    //validate
+    //axios
+
+    setFormData({
+      email: "",
+      password: "",
+    });
+  };
+
   return (
     <section className="w-full relative h-screen flex justify-center items-center">
       <div className="flex w-full justify-center items-center h-screen flex-wrap">
@@ -20,23 +48,35 @@ const Login = () => {
             />
             <span className="ml-4 font-black text-2xl">Cookie Service</span>
           </Link>
-          <div className="flex flex-col gap-4">
-            <h1 className="font-black lg:text-[48px] text-2xl mb-6">Login</h1>
+          <div className="flex flex-col gap-6">
+            <h1 className="font-black lg:text-[48px] text-2xl mb-5">Login</h1>
             <form
-              action=""
+              onSubmit={handleSubmit}
               className="rounded-3xl flex flex-col gap-5 justify-between items-start p-8 shadow-2xl"
             >
               <input
+                name="email"
                 type="email"
-                className="font-bold p-5 outline-none italic border-2 border-gray-100 rounded-xl w-full"
+                id="email"
+                onChange={(e) => handleChange(e)}
+                className="font-bold p-4 text-lg outline-none italic border-2 border-gray-100 rounded-xl w-full"
                 placeholder="Email"
               />
               <input
+                name="password"
                 type="password"
+                id="password"
+                onChange={(e) => handleChange(e)}
                 placeholder="Password"
-                className="font-bold p-5 outline-none italic border-2 border-gray-100 rounded-xl w-full"
+                className="font-bold p-4 text-lg outline-none italic border-2 border-gray-100 rounded-xl w-full"
               />
+              {error && (
+                <p className="text-appRed text-sm lg:text-md col-span-1 lg:col-span-3">
+                  {error}
+                </p>
+              )}
               <button
+                type="submit"
                 className="self-end bg-appRed text-white 
                 flex justify-center gap-4 lg:gap-0 lg:justify-around 
                 items-center p-3 px-5 rounded-full [&>*]:hover:scale-105"
