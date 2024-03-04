@@ -35,7 +35,7 @@ const Login = () => {
     <section className="w-full relative h-screen flex justify-center items-center">
       <div className="flex w-full justify-center items-center h-screen flex-wrap">
         <div className="bg-gradient-to-l from-gray-100 to-transparent lg:flex-1 h-full py-5 px-4 lg:pl-20 lg:pr-8 xl:pl-32 xl:pr-16">
-          <div className="max-w-[700px] flex flex-col justify-between h-full">
+          <div className="lg:max-w-[700px] flex flex-col justify-between h-full">
             <Link
               href="/"
               className="flexStart w-fit [&>*:first-child]:hover:rotate-180"
