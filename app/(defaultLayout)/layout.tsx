@@ -13,12 +13,12 @@ export const satoshi = localFont({
     },
     {
       path: "../../public/fonts/satoshi/Satoshi-Bold.otf",
-      style: "bold",
+      style: "normal",
       weight: "700",
     },
     {
       path: "../../public/fonts/satoshi/Satoshi-Black.otf",
-      style: "black",
+      style: "normal",
       weight: "900",
     },
   ],
