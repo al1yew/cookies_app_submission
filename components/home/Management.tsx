@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Container from "../shared/Container";
+import Link from "next/link";
 
 const Management = () => {
   return (
@@ -19,6 +20,28 @@ const Management = () => {
           <h1 className="font-black text-[32px] lg:text-[44px] text-center">
             Your Path to Easy Compliance
           </h1>
+        </div>
+        <div className="flex justify-center gap-6 items-center mt-4">
+          <Link
+            className="flex justify-start items-center p-2 rounded-md border border-gray-100"
+            href="/"
+          >
+            <span className="text-sm mr-3 font-medium">
+              What is Cookie Consent
+            </span>
+            <span>
+             img
+            </span>
+          </Link>
+          <Link
+            className="flex justify-start items-center p-2 rounded-md border border-gray-100"
+            href="/#FAQ"
+          >
+            <span className="text-sm mr-3 font-medium">FAQ </span>
+            <span>
+              img
+            </span>
+          </Link>
         </div>
       </Container>
     </section>
