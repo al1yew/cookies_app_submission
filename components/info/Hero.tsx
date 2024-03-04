@@ -29,7 +29,7 @@ const Hero = () => {
             the forefront of this movement. As an EU law, GDPR sets stringent
             standards for data protection, fundamentally reshaping the way
             businesses approach data privacy. It's not just an EU concern; any
-            website with EU visitors must comply, making it a global priorit
+            website with EU visitors must comply, making it a global priority.
           </p>
           <Link
             href="/login"
