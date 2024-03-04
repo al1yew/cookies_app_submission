@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Button from "../shared/Button";
 
 const HeroForm = () => {
   const [formData, setFormData] = useState({
@@ -44,11 +45,7 @@ const HeroForm = () => {
         onChange={handleChange}
         className="p-3 rounded-xl outline-none col-span-1 lg:col-span-2 italic border border-gray-100 font-medium tracking-wider"
       />
-      <button type="submit">Get Started</button>
-      {/* this button can be component as it is reusable 
-      can be red, or white for payment component, if red, 
-      text is white, if white, text is red
-      send title, isRed, onclick, type*/}
+      <Button />
       {error && (
         <p className="text-appRed text-sm lg:text-md col-span-1 lg:col-span-3">
           {error}
