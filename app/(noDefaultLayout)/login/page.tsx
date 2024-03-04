@@ -70,28 +70,26 @@ const Login = () => {
                 placeholder="Password"
                 className="font-bold p-4 text-lg outline-none italic border-2 border-gray-100 rounded-xl w-full"
               />
-              {error && (
-                <p className="text-appRed text-sm lg:text-md col-span-1 lg:col-span-3">
-                  {error}
-                </p>
-              )}
-              <button
-                type="submit"
-                className="self-end bg-appRed text-white 
+              <div className="flex justify-between w-full items-center">
+                <p className=" text-appRed text-sm lg:text-md w-fit">{error}</p>
+                <button
+                  type="submit"
+                  className="bg-appRed text-white 
                 flex justify-center gap-4 lg:gap-0 lg:justify-around 
                 items-center p-3 px-5 rounded-full [&>*]:hover:scale-105"
-              >
-                <span className="text-white text-lg tracking-wide transition-transform transform">
-                  Login
-                </span>
-                <Image
-                  src="/images/arrow.svg"
-                  width={25}
-                  height={24}
-                  alt="arrow"
-                  className="transition-transform transform ml-5"
-                />
-              </button>
+                >
+                  <span className="text-white text-lg tracking-wide transition-transform transform">
+                    Login
+                  </span>
+                  <Image
+                    src="/images/arrow.svg"
+                    width={25}
+                    height={24}
+                    alt="arrow"
+                    className="transition-transform transform ml-5"
+                  />
+                </button>
+              </div>
             </form>
             <div className="rounded-3xl bg-black px-7 py-4 flex items-center justify-between">
               <div className="w-fit text-white font-medium text-xl">
