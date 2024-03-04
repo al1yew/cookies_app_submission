@@ -26,7 +26,7 @@ const SingleQuestion = ({
         {question}
       </h3>
       <div
-        className={`max-w-[80%] duration-200 overflow-hidden transition-height ${
+        className={`max-w-[80%] duration-200 overflow-hidden transition-height leading-180 ${
           isActive ? "h-auto mt-6" : "h-0"
         }`}
       >

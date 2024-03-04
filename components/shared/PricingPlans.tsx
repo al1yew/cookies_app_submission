@@ -41,7 +41,7 @@ const PricingPlans = ({ isHomePage }: { isHomePage?: boolean }) => {
                 >
                   <h1 className="font-black text-3xl">{plan.name}</h1>
                   <p
-                    className={`font-normal text-md mb-4 ${
+                    className={`font-normal text-md mb-5 ${
                       plan.isPreferred ? "text-white" : "text-[#5B5B5B]"
                     }`}
                   >
@@ -75,8 +75,8 @@ const PricingPlans = ({ isHomePage }: { isHomePage?: boolean }) => {
                                 ? "/images/whitetick.svg"
                                 : "/images/blacktick.svg"
                             }
-                            width={11}
-                            height={11}
+                            width={16}
+                            height={16}
                             alt="tick"
                           />
                           <span className="ml-3">{option}</span>
