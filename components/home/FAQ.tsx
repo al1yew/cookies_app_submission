@@ -1,3 +1,4 @@
+import { QUESTIONS } from "@/lib/constants";
 import Container from "../shared/Container";
 
 const FAQ = () => {
@@ -9,7 +10,9 @@ const FAQ = () => {
             Frequently Asked Questions
           </h1>
           <div className="w-full flex-col flex gap-5 lg:gap-8 mt-10">
-            questions goes here
+            {QUESTIONS.map((question) => {
+              return <div>{question.question}</div>;
+            })}
           </div>
         </div>
       </Container>

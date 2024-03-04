@@ -84,3 +84,36 @@ export const PRICING_PLANS = [
     isPreferred: true,
   },
 ];
+
+export const QUESTIONS = [
+  {
+    id: 1,
+    question: "Etiam risus urna odio donec tellus massa nec dis?",
+    answer:
+      "Aliquam tristique sed vulputate amet. Amet a orci nunc risus scelerisque varius placerat bibendum tristique. Ut pharetra non eu in cras ullamcorper viverra ac malesuada. Venenatis proin non magna ullamcorper nec adipiscing condimentum. Lacus semper dignissim nisl lectus id vulputate elementum mauris leo.",
+  },
+  {
+    id: 2,
+    question: "Neque justo volutpat eleifend elementum.",
+    answer:
+      "Aliquam tristique sed vulputate amet. Amet a orci nunc risus scelerisque varius placerat bibendum tristique. Ut pharetra non eu in cras ullamcorper viverra ac malesuada. Venenatis proin non magna ullamcorper nec adipiscing condimentum. Lacus semper dignissim nisl lectus id vulputate elementum mauris leo.",
+  },
+  {
+    id: 3,
+    question: "Orci amet quam augue tellus viverra ante.",
+    answer:
+      "Aliquam tristique sed vulputate amet. Amet a orci nunc risus scelerisque varius placerat bibendum tristique. Ut pharetra non eu in cras ullamcorper viverra ac malesuada. Venenatis proin non magna ullamcorper nec adipiscing condimentum. Lacus semper dignissim nisl lectus id vulputate elementum mauris leo.",
+  },
+  {
+    id: 4,
+    question: "Amet lacus dictum id nisi volutpat",
+    answer:
+      "Aliquam tristique sed vulputate amet. Amet a orci nunc risus scelerisque varius placerat bibendum tristique. Ut pharetra non eu in cras ullamcorper viverra ac malesuada. Venenatis proin non magna ullamcorper nec adipiscing condimentum. Lacus semper dignissim nisl lectus id vulputate elementum mauris leo.",
+  },
+  {
+    id: 5,
+    question: "Et proin vel tellus mauris est aliquam",
+    answer:
+      "Aliquam tristique sed vulputate amet. Amet a orci nunc risus scelerisque varius placerat bibendum tristique. Ut pharetra non eu in cras ullamcorper viverra ac malesuada. Venenatis proin non magna ullamcorper nec adipiscing condimentum. Lacus semper dignissim nisl lectus id vulputate elementum mauris leo.",
+  },
+];
