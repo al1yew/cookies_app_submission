@@ -67,7 +67,7 @@ const Management = () => {
             className="rounded-3xl"
           />
         </div>
-        <div className="flex justify-between w-full flex-wrap px-4 lg:px-16 items-center gap-10 lg:gap-24 mt-12">
+        <div className="flex justify-between w-full flex-wrap px-4 lg:px-10 items-center gap-10 lg:gap-24 mt-12">
           {STEPS.map((step, i) => {
             return (
               <div key={i} className="w-full flex flex-col lg:flex-1">
@@ -79,7 +79,7 @@ const Management = () => {
                   alt="icon"
                 />
                 <h1 className="mb-3 font-black text-2xl">{step.title}</h1>
-                <p className="font-medium text-[#5B5B5B] text-lg">
+                <p className="font-medium text-[#5B5B5B] text-lg leading-180">
                   {step.text}
                 </p>
               </div>
@@ -91,7 +91,7 @@ const Management = () => {
           flex justify-center gap-4 w-full lg:w-fit lg:gap-0 lg:justify-around 
           items-center p-3 px-5 rounded-full [&>*]:hover:scale-105"
         >
-          <span className="text-white text-lg tracking-wide transition-transform transform">
+          <span className="text-white text-lg tracking-wider transition-transform transform ">
             Get started
           </span>
           <Image
