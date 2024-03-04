@@ -2,12 +2,14 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Button from "../shared/Button";
+import { useRouter } from "next/navigation";
 
 const Modal = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const modalRef = useRef<HTMLDivElement>(null);
+  const router = useRouter();
 
   useEffect(() => {
     const handleOutsideClicks = (event: MouseEvent) => {
@@ -67,11 +69,12 @@ const Modal = () => {
               Close
             </button>
             <Button />
-            {/* reusable button again */}
+            {/* reusable element */}
           </div>
         </div>
       </div>
     )
   );
 };
+
 export default Modal;

@@ -1,8 +1,8 @@
-import Image from "next/image";
-import Container from "../shared/Container";
 import Link from "next/link";
-import Button from "../shared/Button";
+import Container from "../shared/Container";
+import Image from "next/image";
 import { STEPS } from "@/lib/constants";
+import Button from "../shared/Button";
 
 const Management = () => {
   return (
@@ -84,8 +84,10 @@ const Management = () => {
             );
           })}
         </div>
-        <Button />
-        {/* reusable button again */}
+        <div className="mt-16">
+          <Button />
+          {/* reusable element */}
+        </div>
       </Container>
     </section>
   );
