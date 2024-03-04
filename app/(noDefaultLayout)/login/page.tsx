@@ -36,7 +36,7 @@ const Login = () => {
                 placeholder="Password"
                 className="font-bold p-5 text-gray-100 italic border border-gray-100 rounded-xl w-full"
               />
-              <button className="">Login arrow</button>
+              <button className="self-end">Login arrow</button>
             </form>
             <div>do not have account? reg</div>
           </div>
