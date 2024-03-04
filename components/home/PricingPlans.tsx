@@ -1,8 +1,8 @@
 "use client";
 
+import { PRICING_PLANS } from "@/lib/constants";
 import Image from "next/image";
 import Button from "../shared/Button";
-import { PRICING_PLANS } from "@/lib/constants";
 
 const PricingPlans = () => {
   return (
@@ -30,7 +30,15 @@ const PricingPlans = () => {
           >
             {PRICING_PLANS.map((plan, i) => {
               return (
-                <div key={i}>
+                <div
+                  key={i}
+                  className={`${
+                    plan.isPreferred
+                      ? "bg-appRed text-white"
+                      : "bg-white text-black"
+                  } p-8 flex flex-col justify-between items-start lg:flex-1 
+                  h-[440px] max-w-[380px] w-full rounded-3xl shadow-md lg:hover:scale-105 duration-100 `}
+                >
                   <h1 className="font-black text-3xl">{plan.name}</h1>
                   <p
                     className={`font-normal text-md mb-4 ${
@@ -61,7 +69,16 @@ const PricingPlans = () => {
                               : "text-black bg-[#F1EEED]"
                           } flex items-center justify-start mb-2 `}
                         >
-                          img
+                          <Image
+                            src={
+                              plan.isPreferred
+                                ? "/images/whitetick.svg"
+                                : "/images/blacktick.svg"
+                            }
+                            width={11}
+                            height={11}
+                            alt="tick"
+                          />
                           <span className="ml-3">{option}</span>
                         </li>
                       );
