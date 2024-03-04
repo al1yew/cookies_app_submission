@@ -4,6 +4,7 @@ import Image from "next/image";
 import Container from "./Container";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { HEADERLINKS } from "@/lib/constants";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -60,10 +61,21 @@ const Navbar = () => {
             <span className="ml-4 font-black text-2xl">Cookie Service</span>
           </Link>
 
-          {/* header links */}
+          <ul>
+            {HEADERLINKS.map((link, i) => {
+              return (
+                <li key={i}>
+                  <Link
+                    href={link.href}
+                  >
+                    {link.text}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
 
-          
-
+          {/* need to place space here span for ex */}
         </div>
       </Container>
     </header>
