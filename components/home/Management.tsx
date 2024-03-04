@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Container from "../shared/Container";
 import Link from "next/link";
+import Button from "../shared/Button";
 
 const Management = () => {
   return (
@@ -54,6 +55,20 @@ const Management = () => {
             </span>
           </Link>
         </div>
+        <div className="rounded-3xl border border-gray-100 mx-auto w-fit mt-8 ">
+          <Image
+            src="/images/videoimg.png"
+            width={600}
+            height={600}
+            alt="video"
+            className="rounded-3xl"
+          />
+        </div>
+        <div className="flex justify-between w-full flex-wrap px-4 lg:px-16 items-center gap-10 lg:gap-32 mt-12">
+          3 steps
+        </div>
+        <Button />
+        {/* reusable button again */}
       </Container>
     </section>
   );
