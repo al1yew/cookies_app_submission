@@ -8,7 +8,7 @@ const PricingPlans = ({ isHomePage }: { isHomePage?: boolean }) => {
   return (
     <section className="w-full relative mt-24 lg:mb-24">
       <div className="max-w-[1320px] mx-auto px-0 lg:px-10 xl:px-15">
-        <div className="bg-black w-full lg:h-[550px] lg:w-11/12 lg:max-w-[1000px] lg:rounded-3xl p-3 py-7 pb-3 lg:p-10 mx-auto relative ">
+        <div className="bg-black w-full lg:h-[550px] lg:w-11/12 lg:max-w-[1000px] lg:rounded-3xl p-3 pt-20 pb-3 lg:p-10 mx-auto relative ">
           <h2 className="font-normal text-md text-[#DBD1D1] text-center tracking-8 uppercase">
             Tailored solutions for every compliance requirement
           </h2>
