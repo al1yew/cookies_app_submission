@@ -11,11 +11,8 @@ const Footer = () => {
           className="bg-[#FBFBFB] rounded-3xl p-5 xl:w-11/12 lg:max-w-[1100px] w-full mx-auto flex flex-col lg:flex-row 
         justify-between items-center"
         >
-          <Link
-            href="/"
-            className="flex items-end justify-end [&>*:first-child]:hover:rotate-180"
-          >
-            <div className="flex items-center justify-start">
+          <Link href="/" className="flex items-end justify-end ">
+            <div className="flex items-center justify-start [&>*:first-child]:hover:rotate-180">
               <Image
                 src="/images/logo.svg"
                 alt="Cookies Logo"
@@ -30,14 +27,14 @@ const Footer = () => {
             </span>
           </Link>
           {/* consider merging footer and header, they look same */}
-          <ul className="flex flex-col lg:flex-row lg:justify-end justify-center items-center">
+          <ul className="flex flex-col lg:flex-row lg:justify-end justify-center items-center w-full">
             {FOOTERLINKS.map((link, i) => {
               if (link.isRound) {
                 return (
-                  <li className="mt-8 lg:mt-0 lg:ml-8 py-1 px-3 rounded-full bg-black text-white">
+                  <li className="mt-8 lg:mt-0 lg:ml-8 p-3 rounded-full bg-black text-white w-full lg:w-fit">
                     <Link
                       href={link.href}
-                      className="flex justify-center gap-4 lg:gap-0 lg:justify-around items-center "
+                      className="flex justify-center lg:justify-around items-center "
                     >
                       <span className="text-md tracking-wide mr-4">
                         {link.text}

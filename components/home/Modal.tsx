@@ -69,8 +69,8 @@ const Modal = () => {
             </button>
             <Link
               href="/info"
-              className="bg-white text-appRed flex justify-center gap-4 lg:gap-0 lg:justify-around items-center 
-        py-3 rounded-full [&>*]:hover:scale-105 col-span-1"
+              className="bg-red text-white flex justify-center gap-4 lg:gap-0 lg:justify-around items-center 
+              py-3 rounded-full [&>*]:hover:scale-105 col-span-1"
             >
               <span className="text-lg tracking-wide transition-transform transform text-appRed">
                 Check Your Website
