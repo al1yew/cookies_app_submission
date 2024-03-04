@@ -12,6 +12,14 @@ const Benefits = () => {
             Unlocking Efficiency and Security
           </h1>
         </div>
+        <div className="flex flex-col gap-5 mt-10">
+          <div className="flex justify-between flex-wrap items-center w-full gap-5">
+            31 41 23 percent
+          </div>
+          <div className="flex justify-between flex-wrap items-center w-full gap-5">
+            56 41 percent
+          </div>
+        </div>
       </Container>
     </section>
   );
