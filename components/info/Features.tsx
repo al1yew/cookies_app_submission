@@ -9,7 +9,7 @@ const Features = () => {
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-4 bg-[#FBFBFB] lg:w-11/12 w-full p-10 rounded-3xl mx-auto">
           {FEATURES.map((feature, i) => {
             return (
-              <div className="col-span-1 flex flex-col justify-between">
+              <div key={i} className="col-span-1 flex flex-col justify-between">
                 <Image
                   src={feature.icon}
                   width={i % 2 != 0 ? 30 : 25}

@@ -61,6 +61,7 @@ const Hero = () => {
             {COOKIE_TYPES.map((cookieType, i) => {
               return (
                 <Link
+                key={i}
                   href={cookieType.link}
                   className="rounded-full bg-gradient-to-r from-gray-100 via-gray-50 to-white p-[1px] 
                   flex items-center justify-center

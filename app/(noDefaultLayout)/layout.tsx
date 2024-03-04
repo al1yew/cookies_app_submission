@@ -1,7 +1,7 @@
 import localFont from "next/font/local";
 import "../globals.css";
 
-export const satoshi = localFont({
+const satoshi = localFont({
   src: [
     {
       path: "../../public/fonts/satoshi/Satoshi-Regular.otf",

@@ -23,7 +23,7 @@ const Characteristics = () => {
         <div className="flex flex-col gap-8 lg:w-8/12 w-full mx-auto">
           {CHARACTERISTICS.map((char, i) => {
             return (
-              <div className="col-span-1 flex flex-col justify-between">
+              <div key={i} className="col-span-1 flex flex-col justify-between">
                 <h1 className="font-black lg:text-5xl text-2xl lg:mb-8 mb-5">
                   {char.title}
                 </h1>

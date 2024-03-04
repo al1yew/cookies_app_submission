@@ -4,7 +4,7 @@ import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import localFont from "next/font/local";
 
-export const satoshi = localFont({
+const satoshi = localFont({
   src: [
     {
       path: "../../public/fonts/satoshi/Satoshi-Regular.otf",

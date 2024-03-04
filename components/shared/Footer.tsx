@@ -35,7 +35,7 @@ const Footer = () => {
             {FOOTERLINKS.map((link, i) => {
               if (link.isRound) {
                 return (
-                  <li className="mt-8 lg:mt-0 lg:ml-8 p-3 rounded-full bg-black text-white w-full lg:w-fit">
+                  <li key={i} className="mt-8 lg:mt-0 lg:ml-8 p-3 rounded-full bg-black text-white w-full lg:w-fit">
                     <Link
                       href={link.href}
                       className="flex justify-center lg:justify-around items-center "
