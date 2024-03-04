@@ -145,3 +145,26 @@ export const FOOTERLINKS = [
     isRound: true,
   },
 ];
+
+export const FEATURES = [
+  {
+    icon: "/images/shield.svg",
+    title: "Data Protection",
+    text: "GDPR safeguards personal data against unauthorized access and misuse",
+  },
+  {
+    icon: "/images/planet.svg",
+    title: "Global Impact",
+    text: "Affects any website accessed by EU residents, regardless of location.",
+  },
+  {
+    icon: "/images/shield.svg",
+    title: "Data Protection",
+    text: "GDPR safeguards personal data against unauthorized access and misuse",
+  },
+  {
+    icon: "/images/planet.svg",
+    title: "Global Impact",
+    text: "Affects any website accessed by EU residents, regardless of location.",
+  },
+];
