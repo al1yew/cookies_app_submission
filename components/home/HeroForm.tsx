@@ -49,7 +49,7 @@ const HeroForm = () => {
       <button
         type="submit"
         className="bg-appRed text-white lg:rounded-l-xl lg:rounded-r-3xl rounded-full flex justify-center gap-4 lg:gap-0 lg:justify-around items-center 
-        py-3"
+        py-3 col-span-1 [&>*]:hover:scale-105"
       >
         <span className="text-white text-lg tracking-wide transition-transform transform">
           Get Started

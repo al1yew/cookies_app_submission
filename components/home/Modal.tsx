@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
-import Button from "../shared/Button";
 import { useRouter } from "next/navigation";
 
 const Modal = () => {
@@ -68,8 +67,22 @@ const Modal = () => {
             >
               Close
             </button>
-            <Button />
-            {/* reusable element */}
+            <Link
+              href="/info"
+              className="bg-white text-appRed flex justify-center gap-4 lg:gap-0 lg:justify-around items-center 
+        py-3 rounded-full [&>*]:hover:scale-105 col-span-1"
+            >
+              <span className="text-lg tracking-wide transition-transform transform text-appRed">
+                Check Your Website
+              </span>
+              <Image
+                src="/images/miniarrow.svg"
+                width={25}
+                height={24}
+                alt="arrow"
+                className="transition-transform transform"
+              />{" "}
+            </Link>
           </div>
         </div>
       </div>

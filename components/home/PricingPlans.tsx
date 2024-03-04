@@ -2,7 +2,7 @@
 
 import { PRICING_PLANS } from "@/lib/constants";
 import Image from "next/image";
-import Button from "../shared/Button";
+import Link from "next/link";
 
 const PricingPlans = () => {
   return (
@@ -84,10 +84,33 @@ const PricingPlans = () => {
                       );
                     })}
                   </ul>
-                  <div className="w-full">
-                    <Button />
-                    {/* reusable button */}
-                  </div>
+                  <Link
+                    href="/info"
+                    className={`${
+                      !plan.isPreferred
+                        ? "bg-appRed text-white"
+                        : "bg-white text-appRed"
+                    } flex justify-center gap-4 items-center py-3 rounded-full w-full [&>*]:hover:scale-105`}
+                  >
+                    <span
+                      className={`text-lg tracking-wide transition-transform transform ${
+                        !plan.isPreferred ? "text-white" : "text-appRed"
+                      }`}
+                    >
+                      Get Started
+                    </span>
+                    <Image
+                      src={
+                        !plan.isPreferred
+                          ? "/images/arrow.svg"
+                          : "/images/miniarrow.svg"
+                      }
+                      width={25}
+                      height={24}
+                      alt="arrow"
+                      className="transition-transform transform"
+                    />
+                  </Link>
                 </div>
               );
             })}
