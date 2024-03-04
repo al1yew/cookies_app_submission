@@ -46,6 +46,19 @@ const Hero = () => {
           <h1 className="font-black text-[40px] lg:text-[80px] leading-[40px] lg:leading-[80px]">
             Cookie Consent
           </h1>
+          <h5 className="font-normal text-appGray text-md lg:text-lg text-center mt-4">
+            Expert-led{" "}
+            <strong className="text-black">Cookie Management Services</strong>{" "}
+            <br /> Tailored for Your Business Needs.
+          </h5>
+          {/* form */}
+          {/* gdpa things */}
+          <p className="text-sm lg:text-md font-normal text-center text-[#898080] mt-4 lg:mt-0">
+            Our comprehensive cookie consent services handle everything from
+            initial cookie audits to ongoing compliance monitoring, ensuring
+            your website adheres to all relevant regulations without you having
+            to lift a finger.
+          </p>
         </div>
       </Container>
     </section>
