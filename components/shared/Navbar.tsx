@@ -61,12 +61,13 @@ const Navbar = () => {
             <span className="ml-4 font-black text-2xl">Cookie Service</span>
           </Link>
 
-          <ul>
+          <ul className="hidden lg:flex justify-end items-center">
             {HEADERLINKS.map((link, i) => {
               return (
                 <li key={i}>
                   <Link
                     href={link.href}
+                    className="font-bold text-md ml-8 hover:underline"
                   >
                     {link.text}
                   </Link>
@@ -75,7 +76,8 @@ const Navbar = () => {
             })}
           </ul>
 
-          {/* need to place space here span for ex */}
+          <span className="block lg:hidden"></span>
+          <div className="block lg:hidden" />
         </div>
       </Container>
     </header>
