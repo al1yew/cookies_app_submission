@@ -6,7 +6,7 @@ const Login = () => {
   return (
     <section className="w-full relative h-screen flex justify-center items-center">
       <div className="flex w-full justify-center items-center h-screen flex-wrap">
-        <div className="bg-gray-100 lg:flex-1 h-full py-5 flex flex-col justify-between px-4 lg:pl-20 lg:pr-8 xl:pl-32 xl:pr-16">
+        <div className="bg-gradient-to-l from-gray-100 to-transparent bg-blur lg:flex-1 h-full py-5 flex flex-col justify-between px-4 lg:pl-20 lg:pr-8 xl:pl-32 xl:pr-16">
           <Link
             href="/"
             className="flexStart w-fit [&>*:first-child]:hover:rotate-180"
@@ -21,14 +21,14 @@ const Login = () => {
             <span className="ml-4 font-black text-2xl">Cookie Service</span>
           </Link>
           <div>
-            <h1 className="font-black lg:text-[56px] text-2xl mb-10">Login</h1>
+            <h1 className="font-black lg:text-[56px] text-2xl mb-12">Login</h1>
             <form
               action=""
-              className="rounded-3xl bg-gray-100 flex flex-col justify-between items-start p-10 shadow-xl"
+              className="rounded-3xl  flex flex-col justify-between items-start p-10 shadow-2xl"
             >
               <input
                 type="text"
-                className="p-3 bg-white text-gray-100 italic border border-gray-100 rounded-2xl"
+                className="p-3 text-gray-100 italic border border-gray-100 rounded-2xl"
                 placeholder="Email"
               />
               <input type="password" name="" id="" />
