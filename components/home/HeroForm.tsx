@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import Button from "../shared/Button";
 import Image from "next/image";
 
 const HeroForm = () => {

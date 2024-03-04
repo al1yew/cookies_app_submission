@@ -2,7 +2,6 @@ import Link from "next/link";
 import Container from "../shared/Container";
 import Image from "next/image";
 import { STEPS } from "@/lib/constants";
-import Button from "../shared/Button";
 
 const Management = () => {
   return (
@@ -86,7 +85,7 @@ const Management = () => {
         </div>
         <button
           className="mt-16 mx-auto bg-appRed text-white 
-          flex justify-center gap-4 lg:gap-0 lg:justify-around 
+          flex justify-center gap-4 w-full lg:w-fit lg:gap-0 lg:justify-around 
           items-center p-3 px-5 rounded-full [&>*]:hover:scale-105"
         >
           <span className="text-white text-lg tracking-wide transition-transform transform">
