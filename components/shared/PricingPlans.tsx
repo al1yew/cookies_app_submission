@@ -18,14 +18,14 @@ const PricingPlans = ({ isHomePage }: { isHomePage?: boolean }) => {
           {isHomePage && (
             <Image
               src="/images/squares.svg"
-              width={400}
-              height={400}
+              width={500}
+              height={500}
               alt="squares"
-              className="absolute -right-[40%] -top-24 hidden lg:block"
+              className="absolute -right-[45%] -top-44 hidden lg:block"
             />
           )}
           <div
-            className="lg:absolute lg:-bottom-20 lg:left-1/2 lg:-translate-x-1/2 lg:gap-6 lg:w-5/6
+            className="lg:absolute lg:-bottom-20 lg:left-1/2 lg:-translate-x-1/2 lg:gap-6 lg:w-9/12
           flex flex-wrap flex-col lg:flex-row justify-center items-center gap-3 w-full"
           >
             {PRICING_PLANS.map((plan, i) => {
