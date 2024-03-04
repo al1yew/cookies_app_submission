@@ -76,6 +76,10 @@ const Management = () => {
                   width={24}
                   alt="icon"
                 />
+                <h1 className="mb-3 font-black text-2xl">{step.title}</h1>
+                <p className="font-medium text-[#5B5B5B] text-lg">
+                  {step.text}
+                </p>
               </div>
             );
           })}
