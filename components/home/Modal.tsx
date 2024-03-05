@@ -3,12 +3,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
-import { useRouter } from "next/navigation";
 
 const Modal = () => {
   const [modalIsOpen, setModalIsOpen] = useState(true);
   const modalRef = useRef<HTMLDivElement>(null);
-  const router = useRouter();
 
   useEffect(() => {
     const handleOutsideClicks = (event: MouseEvent) => {
@@ -39,7 +37,7 @@ const Modal = () => {
             width={1}
             height={1}
             alt="cells"
-            className="absolute top-0 right-0 w-1/2 h-full"
+            className="absolute top-0 right-0 w-1/2 h-full z-1"
           />
           <span
             onClick={() => setModalIsOpen(false)}
@@ -60,7 +58,7 @@ const Modal = () => {
           <Link className="text-appRed font-black text-xl mb-10" href="/">
             Learn More
           </Link>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 w-full z-10">
             <button
               className="bg-black rounded-full col-span-1 text-center p-3 text-white font-bold text-xl"
               onClick={() => setModalIsOpen(false)}
