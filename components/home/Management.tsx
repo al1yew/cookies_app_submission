@@ -2,6 +2,7 @@ import Link from "next/link";
 import Container from "../shared/Container";
 import Image from "next/image";
 import { STEPS } from "@/lib/constants";
+import { Suspense } from "react";
 
 const Management = () => {
   return (
@@ -59,13 +60,15 @@ const Management = () => {
           className="rounded-3xl border-[1.5px] border-white mx-auto w-fit mt-8 "
           style={{ boxShadow: "0 -14px 52px 1px rgba(0, 0, 0, 0.12)" }}
         >
-          <Image
-            src="/images/videoimg.png"
-            width={600}
-            height={600}
-            alt="video"
-            className="rounded-3xl"
-          />
+          <Suspense fallback="">
+            <Image
+              src="/images/videoimg.png"
+              width={600}
+              height={600}
+              alt="video"
+              className="rounded-3xl"
+            />
+          </Suspense>
         </div>
         <div className="flex justify-between w-full flex-wrap px-4 lg:px-10 items-center gap-10 lg:gap-24 mt-12">
           {STEPS.map((step, i) => {

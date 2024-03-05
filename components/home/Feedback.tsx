@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Container from "../shared/Container";
+import { Suspense } from "react";
 
 const Feedback = () => {
   return (
@@ -22,12 +23,14 @@ const Feedback = () => {
           </div>
 
           <div className="lg:flex-1">
-            <Image
-              src="/images/feedbackuser.png"
-              width={550}
-              height={550}
-              alt="user feedback"
-            />
+            <Suspense fallback="">
+              <Image
+                src="/images/feedbackuser.png"
+                width={550}
+                height={550}
+                alt="user feedback"
+              />
+            </Suspense>
           </div>
         </div>
       </Container>
