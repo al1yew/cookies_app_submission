@@ -25,7 +25,7 @@ const satoshi = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Cookeis app",
+  title: "Cookies app",
   description: "Developed by Vasif",
 };
 
