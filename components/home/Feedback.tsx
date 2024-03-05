@@ -22,12 +22,12 @@ const Feedback = () => {
           </div>
 
           <div className="lg:flex-1">
-              <Image
-                src="/images/feedbackuser.png"
-                width={550}
-                height={550}
-                alt="user feedback"
-              />
+            <Image
+              src={"/images/feedbackuser.png"}
+              width={550}
+              height={550}
+              alt="user feedback"
+            />
           </div>
         </div>
       </Container>
