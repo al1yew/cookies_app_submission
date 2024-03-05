@@ -23,7 +23,7 @@ const Feedback = () => {
 
           <div className="lg:flex-1">
             <Image
-              src={"/images/feedbackuser.png"}
+              src="/images/feedbackuser.png"
               width={550}
               height={550}
               alt="user feedback"
