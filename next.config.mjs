@@ -1,20 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  images: [
-    {
-      protocol: "http",
-      hostname: "localhost",
-      port: "3000",
-      pathname: "/images/**",
-    },
-    {
-      protocol: "https",
-      hostname: "<YOUR SITE URL>.com",
-      port: "",
-      pathname: "/images/**",
-    },
-  ],
+  images: {
+    loader: "default",
+  },
 };
 
 export default nextConfig;
