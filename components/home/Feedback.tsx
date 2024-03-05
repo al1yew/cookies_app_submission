@@ -27,7 +27,6 @@ const Feedback = () => {
               width={550}
               height={550}
               alt="user feedback"
-              unoptimized
             />
           </div>
         </div>
