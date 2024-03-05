@@ -64,6 +64,7 @@ const Management = () => {
             width={600}
             height={600}
             alt="video"
+            unoptimized
             className="rounded-3xl"
           />
         </div>
