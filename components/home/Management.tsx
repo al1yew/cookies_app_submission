@@ -60,7 +60,7 @@ const Management = () => {
           style={{ boxShadow: "0 -14px 52px 1px rgba(0, 0, 0, 0.12)" }}
         >
           <Image
-            src="/images/videoimg.png"
+            src="/images/videoimg.svg"
             width={600}
             height={600}
             alt="video"
